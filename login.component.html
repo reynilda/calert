@@ -1,0 +1,55 @@
+
+<div class=" loginpage mt-3" style="font-size:0.9em!important ;">   
+
+    <div class="card-body">
+        <div class="card-text">
+            <form [formGroup]="loginForm" (ngSubmit)="login()">
+                <div class="text-center">
+                    <img src="../../../assets/c-alert-logo.png" alt="logo">
+                </div>
+<div class="text-center" >
+    <a href="/about" >About our Application</a> | <a href="/contact" >Contact US</a>
+</div>
+
+
+
+
+                <div class="form-group mt-5">
+                    
+                    <input type="text" formControlName="username" class="form-control" placeholder="User Name"
+                        [ngClass]="{'is-invalid': submitted && loginForm.controls['username'].errors }" />
+                    <div *ngIf="submitted && loginForm.controls['username'].errors" class="text-danger">
+                        <div *ngIf="loginForm.controls['username'].errors['required']">Email is required</div>                        
+                    </div>
+                </div>
+
+                <div class="form-group mt-4 search">
+                   
+                    <input type="password" formControlName="userpassword" class="form-control" placeholder="Password"
+                        [ngClass]="{'is-invalid': submitted && loginForm.controls['userpassword'].errors }" />
+                        <i class="bi bi-eye-slash-fill"></i>
+                    <div *ngIf="submitted && loginForm.controls['userpassword'].errors" class="text-danger">
+                        <div *ngIf="loginForm.controls['userpassword'].errors['required']">Password is required</div>                       
+                    </div>
+                </div>     
+                                
+            
+                
+
+                <div class="d-flex justify-content-between  mt-5">  
+                    <a href="#" >Forgot password</a>                 
+                    <button class="btn btn-outline-dark mb-2" style="background-color:darkseagreen;width:150px;" type="submit">Sign in</button>                   
+                </div>
+
+
+              
+            </form>
+            <div class="mt-5 text-center">
+                <a href="/register" >New to our App? Click here to register </a>    
+            </div>
+           
+        </div>
+       
+
+    </div>
+</div>
