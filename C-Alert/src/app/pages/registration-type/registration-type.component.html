@@ -1,0 +1,74 @@
+<div class="text-center">
+  <img src="../../../assets/c-alert-logo.png" alt="logo" />
+</div>
+<div class="text-center mt-3">
+  <a href="/about">About our Application</a>
+</div>
+
+<h1 class="mt-2">Register</h1>
+
+<p class="mt-4">I would like to register as a</p>
+
+<!-- 
+<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+    <label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>
+  
+    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+    <label class="btn btn-outline-primary" for="btnradio2">Radio 2</label>
+  
+    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+    <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>
+  </div>
+-->
+
+<div class="mt-4 lst">
+    <div style="padding-left:145px;">
+       Role        
+      </div>
+
+  <div>
+    <input
+      type="radio"
+      class="btn-check"
+      name="btnradio"
+      id="btnradio1"
+      autocomplete="off"
+      checked 
+    />
+    <label class="btn btn-outline-primary" for="btnradio1" (click)="rolechange(1)">Radio 1</label>
+  </div>
+  <div>
+    <input
+      type="radio"
+      class="btn-check"
+      name="btnradio"
+      id="btnradio2"
+      autocomplete="off" 
+    />
+    <label class="btn btn-outline-primary" for="btnradio2" (click)="rolechange(2)">Radio 2</label>
+  </div>
+  <div>
+    <input
+      type="radio"
+      class="btn-check"
+      name="btnradio"
+      id="btnradio3"
+      autocomplete="off" 
+    />
+    <label class="btn btn-outline-primary" for="btnradio3" (click)="rolechange(3)">Radio 3</label>
+  </div>
+</div>
+
+
+{{roleId}}
+
+<div class="mt-5">
+  <button
+    class="btn btn-outline-dark mb-2"
+    style="background-color: darkseagreen; width: 100%"
+    type="submit"
+  >
+    Sign in
+  </button>
+</div>
